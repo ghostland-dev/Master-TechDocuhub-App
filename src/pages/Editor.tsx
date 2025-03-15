@@ -3,7 +3,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { SidebarProvider } from '@/components/ui/sidebar';
 import Layout from '@/components/layout/Layout';
-import { DocumentEditor } from '@/components/documents/DocumentEditor';
+import DocumentEditor from '@/components/documents/DocumentEditor';
 
 const EditorPage = () => {
   const { id } = useParams();

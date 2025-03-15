@@ -3,7 +3,7 @@ import React from 'react';
 import { SidebarProvider } from '@/components/ui/sidebar';
 import Layout from '@/components/layout/Layout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { DocumentList } from '@/components/documents/DocumentList';
+import DocumentList from '@/components/documents/DocumentList';
 
 const DocumentsPage = () => {
   return (
