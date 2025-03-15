@@ -1,7 +1,17 @@
 
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { SidebarProvider, Sidebar, SidebarContent, SidebarGroup, SidebarGroupLabel, SidebarGroupContent, SidebarMenu, SidebarMenuItem, SidebarMenuButton, SidebarHeader, SidebarFooter } from '@/components/ui/sidebar';
+import { 
+  Sidebar,
+  SidebarContent, 
+  SidebarGroup, 
+  SidebarGroupLabel, 
+  SidebarGroupContent, 
+  SidebarMenu, 
+  SidebarMenuItem, 
+  SidebarMenuButton, 
+  SidebarFooter
+} from '@/components/ui/sidebar';
 import { cn } from '@/lib/utils';
 import { 
   FileText, 
@@ -41,11 +51,13 @@ const MainSidebar: React.FC<MainSidebarProps> = ({ collapsed, toggleSidebar }) =
   ];
 
   return (
-    <Sidebar className={cn(
-      "fixed top-0 left-0 h-full transition-all duration-300 border-r z-40",
-      collapsed ? "w-20" : "w-64",
-      "pt-16" // Add padding for navbar
-    )}>
+    <Sidebar 
+      className={cn(
+        "fixed top-0 left-0 h-full transition-all duration-300 border-r z-40",
+        collapsed ? "w-20" : "w-64",
+        "pt-16" // Add padding for navbar
+      )}
+    >
       <SidebarContent className="p-3">
         {/* Main Navigation */}
         <SidebarGroup>
