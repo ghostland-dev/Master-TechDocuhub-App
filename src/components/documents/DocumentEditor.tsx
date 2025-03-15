@@ -313,7 +313,7 @@ const DocumentEditor: React.FC = () => {
         </TabsContent>
         
         <TabsContent value="preview" className="flex-1 p-6 m-0 overflow-auto bg-white dark:bg-gray-950">
-          <div className="max-w-4xl mx-auto document-editor prose-headings:scroll-m-20">
+          <div className="max-w-4xl mx-auto prose prose-zinc dark:prose-invert document-editor prose-headings:scroll-m-20">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
               {content}
             </ReactMarkdown>
