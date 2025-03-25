@@ -6,7 +6,7 @@ import Layout from '@/components/layout/Layout';
 import DocumentEditor from '@/components/documents/DocumentEditor';
 
 const EditorPage = () => {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string }>();
   const isNew = id === 'new';
 
   return (

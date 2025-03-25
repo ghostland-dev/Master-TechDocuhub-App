@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Document, MOCK_DOCUMENTS, DocumentType, getTemplateContent } from '@/utils/documentTypes';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -35,13 +34,16 @@ import { useToast } from '@/components/ui/use-toast';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
-const DocumentEditor: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
-  const [searchParams] = useSearchParams();
+interface DocumentEditorProps {
+  documentId?: string;
+}
+
+const DocumentEditor: React.FC<DocumentEditorProps> = ({ documentId }) => {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { toast } = useToast();
   
-  const isNewDocument = id === 'new';
+  const isNewDocument = !documentId;
   const templateType = searchParams.get('template') as DocumentType;
   
   // Find existing document or create new one
@@ -67,7 +69,7 @@ const DocumentEditor: React.FC = () => {
       };
     }
     
-    const existingDocument = MOCK_DOCUMENTS.find(doc => doc.id === id);
+    const existingDocument = MOCK_DOCUMENTS.find(doc => doc.id === documentId);
     if (!existingDocument) {
       navigate('/documents');
       return {} as Document;
