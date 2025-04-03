@@ -1,69 +1,61 @@
-# Welcome to your Lovable project
+# 📄 DocuTech 1.0.1
+![image](https://github.com/user-attachments/assets/44e5ce36-f237-41a9-9ace-093de478fd48)
 
-## Project info
+**DocuTech** est une plateforme moderne de gestion collaborative de documents techniques. Elle centralise la création, l’organisation et le suivi de documents projet comme les cahiers des charges, les spécifications techniques, les cahiers de recettes et les rapports.
 
-**URL**: https://lovable.dev/projects/9e719920-d93a-48e8-af23-e54e8f680d92
+---
 
-## How can I edit this code?
+## 🚀 Fonctionnalités principales
 
-There are several ways of editing your application.
+- 🧾 **Création de documents techniques** à partir de templates prêts à l'emploi
+- 🗃️ **Organisation par projet** avec indicateurs de progression
+- 📋 **Suivi du statut** des documents (Brouillon, En validation, Approuvé)
+- 📈 **Dashboard interactif** : vision globale des documents et projets
+- 🔍 **Recherche rapide** par titre ou mot-clé
+- 👥 **Interface utilisateur soignée** et responsive
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9e719920-d93a-48e8-af23-e54e8f680d92) and start prompting.
+## 📸 Aperçu
 
-Changes made via Lovable will be committed automatically to this repo.
+![Aperçu de l'interface DocuTech](./assets/screenshot.png)
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📁 Structure des templates de documents
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Cahier des Charges**  
+  Rédaction structurée des besoins projet
 
-Follow these steps:
+- **Spécifications Techniques**  
+  Détails techniques de mise en œuvre
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Cahier de Recettes**  
+  Suivi des scénarios de test et validation
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **Rapports de Sprint**  
+  Suivi régulier de l’avancement agile
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## ⚙️ Stack technique
+
+- **React 18 + Vite + SWC**
+- **Tailwind CSS** + `shadcn/ui`
+- **Lucide-react** pour les icônes
+- **React Hook Form + Zod** pour la validation
+- **@tanstack/react-query** pour la gestion de cache API
+- **ESLint, TypeScript, Prettier** intégrés
+- 📦 Compatible avec une architecture DevOps CI/CD
+
+---
+
+## 🧪 Lancer le projet en local
+
+```bash
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de développement
 npm run dev
-```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/9e719920-d93a-48e8-af23-e54e8f680d92) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
